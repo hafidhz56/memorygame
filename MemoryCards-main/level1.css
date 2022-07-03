@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://images.alphacoders.com/102/1024184.jpg);
+  background-size: 100% 1000px;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: black;
+  margin-left: -20px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+  font-family: Aharoni;
+}
+
+.game-info {
+  color: black;
+  margin-left: -20px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3em;
+  font-family: Aharoni;
+}
+
+.memory-game {
+  width: 450px;
+  height: 360px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotatey(180deg);
+  background: #ffffff;
+}
+
+.overlay-text,
+.overlay-text-flag {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.overlay-text.visible,
+.overlay-text-flag.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+.overlay-text-small {
+  font-size: 0.3em;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 10em;
+  }
+}
+
+@media (max-width: 660px) {
+  .memory-game {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    margin-left: 19px;
+  }
+  .overlay-text {
+    font-size: 3em;
+  }
+  .title {
+    margin-left: 58px;
+  }
+}

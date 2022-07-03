@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 1</title>
+    <script src="javaScript.js" async></script>
+    <link rel="stylesheet" href="level1.css" />
+  </head>
+
+  <body>
+    <h1 class="title">LEVEL 1</h1>
+    <div class="game-info">Time <span id="time-remain">60</span></div>
+    <div class="game-info">Flips <span id="flips">0</span></div>
+    <div class="overlay-text visible">
+      Click To Start
+      <span class="overlay-text-small" onclick="location='main.html'"
+        >Click to Exit</span
+      >
+    </div>
+
+    <div id="game-over-text" class="overlay-text-flag">
+      GAME OVER
+      <span class="overlay-text-small" onclick="location='level1.html'"
+        >Click to Restart</span
+      >
+      <span class="overlay-text-small" onclick="location='main.html'"
+        >Click to Exit</span
+      >
+    </div>
+    <div id="victory-text" class="overlay-text-flag">
+      VICTORY
+      <span class="overlay-text-small" onclick="location='level1.html'"
+        >Click to Restart</span
+      >
+      <span class="overlay-text-small" onclick="location='main.html'"
+        >Click to Exit</span
+      >
+    </div>
+    <section class="memory-game">
+      <div class="memory-game">
+        <div class="memory-card" data-img="facebook">
+          <img
+            class="front-face"
+            src="images/001-facebook.png"
+            alt="facebook"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="facebook">
+          <img
+            class="front-face"
+            src="images/001-facebook.png"
+            alt="facebook"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="twitter1">
+          <img
+            class="front-face"
+            src="images/002-twitter.png"
+            alt="twitter1"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="twitter1">
+          <img
+            class="front-face"
+            src="images/002-twitter.png"
+            alt="twitter1"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="whatsapp">
+          <img
+            class="front-face"
+            src="images/003-whatsapp.png"
+            alt="whatsapp"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="whatsapp">
+          <img
+            class="front-face"
+            src="images/003-whatsapp.png"
+            alt="whatsapp"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="youtube">
+          <img
+            class="front-face"
+            src="images/008-youtube.png"
+            alt="youtube"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="youtube">
+          <img
+            class="front-face"
+            src="images/008-youtube.png"
+            alt="youtube"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="instagram">
+          <img
+            class="front-face"
+            src="images/011-instagram.png"
+            alt="instagram"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="instagram">
+          <img
+            class="front-face"
+            src="images/011-instagram.png"
+            alt="instagram"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="messenger">
+          <img
+            class="front-face"
+            src="images/012-messenger.png"
+            alt="messenger"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="messenger">
+          <img
+            class="front-face"
+            src="images/012-messenger.png"
+            alt="messenger"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="twitter2">
+          <img
+            class="front-face"
+            src="images/013-twitter.png"
+            alt="twitter2"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="twitter2">
+          <img
+            class="front-face"
+            src="images/013-twitter.png"
+            alt="twitter2"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="snapchat">
+          <img
+            class="front-face"
+            src="images/014-snapchat.png"
+            alt="snapchat"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+
+        <div class="memory-card" data-img="snapchat">
+          <img
+            class="front-face"
+            src="images/014-snapchat.png"
+            alt="snapchat"
+          />
+          <img
+            class="back-face"
+            src="images/background2.jpg"
+            alt="Aurelia"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
